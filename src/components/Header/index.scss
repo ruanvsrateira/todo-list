@@ -1,0 +1,36 @@
+@use "../../sass/variables" as *;
+@use "../../sass/mixins" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: $blue;
+  display: flex;
+  align-items: flex-end;
+
+  ul {
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+    width: 80%;
+    gap: 20px;
+
+    li {
+      color: #fff;
+      @include Poppins($weight: 600);
+      padding: 10px 30px;
+    }
+
+    .selected-tab {
+      background-color: #fff;
+      border-radius: 10px 10px 0px 0px;
+      color: $blue;
+    }
+  }
+}
