@@ -1,0 +1,9 @@
+@mixin Poppins($weight) {
+  font-family: "Poppins";
+  font-weight: $weight;
+}
+
+@mixin Raleway($weight) {
+  font-family: "Raleway";
+  font-weight: $weight;
+}
